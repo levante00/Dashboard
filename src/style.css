@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", "sans-serif";
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+.navGlobalStyle {
+  @apply 2xl:pt-62px 2xl:max-w-xs w-full 2xl:h-full;
+}
+.main-scroll::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.ContentHeader {
+  @apply text-grey-300 2xl:text-24px xl:text-20px;
+}
+
+.apexcharts-text tspan {
+  @apply !font-["Poppins"];
+}
+
+.customYearIcon {
+  @apply !text-14px !text-black !w-auto !h-auto !cursor-auto;
+}
+
+.customSvgIcon {
+  @apply !h-auto ml-2;
+}
+
+.chartYaxisLabel,
+.chartXaxisLabel {
+  @apply !text-14px;
+}
+.apexcharts-title-text {
+  @apply !font-["Poppins"];
+}
+
